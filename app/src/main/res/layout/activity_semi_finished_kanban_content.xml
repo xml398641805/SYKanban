@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SemiFinishedKanban">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Fullscreen.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="140px"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/Fullscreen.PopupOverlay" >
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="天津电子看板系统"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="半成品看板"/>
+                </LinearLayout>
+                <Space
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/tv_page"
+                    android:gravity="bottom"
+                    android:text="总页数：5，当前第1页"
+                    android:textSize="14dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"/>
+                <Space
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/bt_show_less_min"
+                    android:text="低于最小库存"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/bt_show_high_max"
+                    android:text="高于最大库存"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/bt_show_finished_delivery"
+                    android:text="已完成生产计划"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/bt_show_unfinished_delivery"
+                    android:text="未完成生产计划"
+                    android:textSize="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/list_title"
+                android:layout_width="match_parent"
+                android:layout_height="80px"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_title_1"
+                    android:text="零件号"
+                    android:textSize="14dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_green"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_2"
+                    android:text="BPCS"
+                    android:textSize="14dp"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_green"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_3"
+                    android:text="类别"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_4"
+                    android:text="完成/排产"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_5"
+                    android:text="待生产"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_6"
+                    android:text="实时库存"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_7"
+                    android:text="最小库存"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_8"
+                    android:text="最大库存"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_yellow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/tv_title_9"
+                    android:text="紧急需求"
+                    android:textSize="14dp"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:background="@drawable/list_title_border_red"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/semi_finished_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

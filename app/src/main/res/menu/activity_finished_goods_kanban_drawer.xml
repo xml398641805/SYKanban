@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_finished_goods_config"
+                android:icon="@drawable/ic_build_black_24dp"
+                android:title="系统配置" />
+            <item
+                android:id="@+id/nav_finished_goods_exit"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="退出系统" />
+        </menu>
+    </item>
+
+</menu>

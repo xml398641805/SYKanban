@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+    </group>
+
+    <item android:title="系统">
+        <menu>
+            <item
+                android:id="@+id/material_kanban_nav_settings"
+                android:icon="@drawable/ic_build_black_24dp"
+                android:title="系统配置" />
+            <item
+                android:id="@+id/material_kanban_nav_exit"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="退出系统" />
+        </menu>
+    </item>
+
+</menu>

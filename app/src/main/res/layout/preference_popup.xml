@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="900px">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="900px"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="系统界面显示设置"
+                    android:gravity="left|center"
+                    android:textSize="25px"
+                    android:background="@drawable/preference_title_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10px"
+                    android:text="列表标题字体大小"
+                    android:textSize="20px"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <SeekBar
+                    android:id="@+id/seekBar_list_title_size"
+                    android:min="20"
+                    android:max="50"
+                    android:progress="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_example_list_title_show"
+                    android:gravity="center|bottom"
+                    android:layout_marginRight="10px"
+                    android:layout_marginLeft="10px"
+                    android:background="@drawable/shape_border_bottom"
+                    android:textSize="20px"
+                    android:text="标题字体样例"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="10px"
+                    android:text="列表项字体大小"
+                    android:textSize="20px"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <SeekBar
+                    android:id="@+id/seekBar_list_item_size"
+                    android:min="20"
+                    android:max="50"
+                    android:progress="20"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_example_list_item_show"
+                    android:gravity="center|bottom"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10px"
+                    android:textSize="20px"
+                    android:text="记录字体样例"
+                    android:background="@drawable/shape_border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="90px" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <TextView
+                    android:layout_marginLeft="10px"
+                    android:text="看板数据记录自动翻页显示"
+                    android:textSize="20px"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <Switch
+                    android:id="@+id/switch_enabled_auto_turn_page"
+                    android:layout_marginRight="20px"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="10px"
+                        android:text="看板列表自动翻页时间间隔："
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_auto_turn_page_time_show"
+                        android:text="5秒"
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/seekBar_auto_turn_page_time"
+                    android:min="3"
+                    android:max="20"
+                    android:progress="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="看板列表数据显示行数："
+                        android:textSize="20px"
+                        android:layout_marginLeft="10px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_list_show_record_num_show"
+                        android:text="10行"
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/seekBar_list_show_record_num"
+                    android:min="3"
+                    android:max="20"
+                    android:progress="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="10px"
+                        android:text="列表记录行显示高度："
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_list_record_high_show"
+                        android:text="20px"
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/seekBar_list_record_high_num"
+                    android:min="40"
+                    android:max="200"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginLeft="10px"
+                        android:text="看板暂停自动翻页后返回时间间隔："
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/tv_return_wait_time_show"
+                        android:text="5秒"
+                        android:textSize="20px"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <SeekBar
+                    android:id="@+id/seekBar_return_wait_time"
+                    android:min="3"
+                    android:max="20"
+                    android:progress="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70px">
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="选择首选启用窗口:"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <Spinner
+                    android:id="@+id/spinner_first_start_activity"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:entries="@array/start_activity"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/shape_border_bottom"
+                android:layout_marginLeft="10px"
+                android:layout_marginRight="10px"
+                android:layout_width="match_parent"
+                android:layout_height="10px"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Kanban</string>
+    <string name="title_activity_material_kanban">MaterialKanban</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Copyright by XML</string>
+    <string name="nav_header_subtitle">mlxu@cnt.tiauto.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings_material">Settings</string>
+    <string name="title_activity_finished_goods_kanban">FinishedGoodsKanban</string>
+    <string name="action_finished_goods_settings">Settings</string>
+    <string name="title_activity_semi_finished_kanban">SemiFinishedKanban</string>
+    <string name="action_settings">系统设置</string>
+    <string name="title_activity_matereial_chart">MatereialChart</string>
+    <string name="title_activity_material_chart">MaterialChart</string>
+    <string name="title_activity_product_chart">ProductChart</string>
+</resources>

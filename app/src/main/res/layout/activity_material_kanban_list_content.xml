@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_part"
+        android:text="零件号"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_bpcs"
+        android:text="BPCS号"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_delivery_need"
+        android:text="配送需求"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_wait_delivery"
+        android:text="等待配送"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_stock"
+        android:text="实时库存"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_min_stock"
+        android:text="最小库存"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_max_stock"
+        android:text="最大库存"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tv_urgent"
+        android:text="紧急需求"
+        android:textSize="14dp"
+        android:gravity="center"
+        android:layout_weight="1.0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+</LinearLayout>
